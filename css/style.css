@@ -99,7 +99,7 @@ body {
 }
 
 #personalImg img {
-  width: 75%;
+  width: 70%;
   height: auto;
 }
 
@@ -119,4 +119,30 @@ body {
 
 #lnuLink {
   color: black;
+}
+
+#projectsContainer {
+    margin-left: 6rem;
+}
+
+#projects {
+    height: 100vh;
+    display: flex;
+}
+
+#projects h1 {
+    margin-left: 4em;
+}
+
+.projectDivs {
+    width: 75%;
+}
+
+.projectDivs p {
+    width: 75%;
+}
+
+.projectDivs img {
+    width: 75%;
+    height: 50;
 }
