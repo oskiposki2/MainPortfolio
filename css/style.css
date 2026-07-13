@@ -1,5 +1,6 @@
-body {
+html, body {
   margin: 0;
+  padding: 0;
   font-family:
     system-ui,
     -apple-system,
@@ -18,19 +19,20 @@ body {
   margin: 0;
   background-image: url(../img/mainHeader.jpg);
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
+  background-repeat: no-repeat;
 }
 
 #navBar {
   display: flex;
   justify-content: center;
-  margin-top: 2em;
 }
 
 #navBar ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
+  margin-top: 2em;
 }
 
 #navBar ul li a {
@@ -42,4 +44,35 @@ body {
 
 #navBar ul li a:hover {
   color: rgb(255, 255, 255, 0.7);
+}
+
+#personalInfo {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#personalImg, #personalText {
+    flex: 1;
+}
+
+#personalImg {
+    display: flex;
+    justify-content: center;
+}
+
+#personalImg img {
+    width: 70%;
+    height: auto;
+}
+
+#personalText {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#lnuLink {
+    color: black;
 }
