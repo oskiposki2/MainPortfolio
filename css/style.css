@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#start-page-bg {
+    margin: 0;
+    background-image: url(../img/mainHeader.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+#navBar ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#navBar ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 60px;
+}
