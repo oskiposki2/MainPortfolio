@@ -1,9 +1,15 @@
-const featuredPhotos = [
+export const featuredPhotos = [
     {
-        image: "swanbabies.jpg",
+        image: "swanbabies.webp",
         alt: "Svanungar"
     },
     {
-        
+        image: "squirell.webp",
+        alt: "Ekorre"
+    },
+    {
+        image: "cranes.webp",
+        alt: "Tranor"
     }
 ]
+

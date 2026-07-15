@@ -9,53 +9,53 @@ body {
   margin: 0;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.25)),
-    url(../img/mainHeader.jpg);
+    url(../img/mainPageImg/mainHeader.jpg);
   background-size: cover;
   min-height: 100vh;
   background-repeat: no-repeat;
 }
 
 #presentation {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    margin-left: 4em;
-    margin-top: 8em;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-left: 4em;
+  margin-top: 8em;
+  align-items: flex-start;
 }
 
 #presentation ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    gap: 4rem;
-    padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  padding: 0;
 }
 
 #presentation ul li a {
-    color: white;
-    padding: 10px;
-    border: 0.1px solid white;
-    text-decoration: none;
-    display: inline-block;
-    width: 150px;
-    text-align: center;
-    transition: 0.2s ease;
+  color: white;
+  padding: 10px;
+  border: 0.1px solid white;
+  text-decoration: none;
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  transition: 0.2s ease;
 }
 
 #presentation ul li a:hover {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 .titles {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
 }
 
 .titles h3 {
-    margin: 0;
+  margin: 0;
 }
 
 #navBar {
@@ -68,7 +68,8 @@ body {
   display: flex;
   flex-direction: row;
   margin-top: 2em;
-  gap: 4rem;}
+  gap: 4rem;
+}
 
 #navBar ul li a {
   color: white;
@@ -122,31 +123,141 @@ body {
 }
 
 #projectsContainer {
-    margin-left: 6rem;
-    height: 100vh;
+  margin-left: 6rem;
+  height: 100vh;
 }
 
 #projects {
-    display: flex;
+  display: flex;
 }
 
 #projects h1 {
-    margin-left: 4em;
+  margin-left: 4em;
 }
 
 .projectDivs {
-    width: 75%;
+  width: 75%;
 }
 
 .projectDivs p {
-    width: 75%;
+  width: 75%;
 }
 
 .projectDivs img {
-    width: 75%;
+  width: 75%;
 }
 
 #favoritePhotosContainer {
-    margin-left: 6rem;
-    height: 100vh;
+  height: 80vh;
+}
+
+#favoritePhotosContainer h1 {
+  margin-left: 6rem;
+}
+
+.gallery-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.gallery-link a {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.gallery-link a:hover {
+  text-decoration: underline;
+}
+
+#featuredPhotosContainer {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#featuredPhotosContainer img {
+  width: 430px;
+  height: 330px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.featuredPhoto {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+.featuredPhoto img {
+  display: block;
+  transition: 0.3s;
+}
+
+.featuredPhoto:hover img {
+  filter: brightness(70%);
+  transform: scale(1.03);
+}
+
+.featuredPhoto span {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.featuredPhoto:hover span {
+  opacity: 1;
+}
+
+.footerContainer {
+    background: #1c1c1c;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 4rem 2rem;
+    margin-top: 5rem;
+}
+
+.footerContainer h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.footerContainer p {
+    margin: .5rem;
+    color: rgba(255,255,255,.75);
+}
+
+.footerContainer a {
+    color: white;
+    text-decoration: none;
+    margin: .5rem 1rem;
+    transition: color .2s ease;
+}
+
+.footerContainer a:hover {
+    color: rgba(255,255,255,.7);
+}
+
+.footerContainer div {
+    display: flex;
+    gap: 2rem;
+    margin: 1.5rem 0;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #222;
+    margin-top: .5rem;
 }
