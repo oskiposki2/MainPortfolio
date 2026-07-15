@@ -123,10 +123,10 @@ body {
 
 #projectsContainer {
     margin-left: 6rem;
+    height: 100vh;
 }
 
 #projects {
-    height: 100vh;
     display: flex;
 }
 
@@ -144,5 +144,9 @@ body {
 
 .projectDivs img {
     width: 75%;
-    height: 50;
+}
+
+#favoritePhotosContainer {
+    margin-left: 6rem;
+    height: 100vh;
 }
