@@ -1,7 +1,9 @@
 import { featuredPhotos } from "./featuredPhotos.js";
 import { footer } from "./footer.js";
+import { header } from "./header.js";
 
 const featuredPhotosContainer = document.getElementById("featuredPhotosContainer");
+const headerContainer = document.querySelector("header")
 
 function loadFeaturedPhotos() {
     for (const photo of featuredPhotos) {
@@ -25,5 +27,6 @@ function loadFeaturedPhotos() {
 }
 
 footer();
+header(headerContainer)
 
 loadFeaturedPhotos();
