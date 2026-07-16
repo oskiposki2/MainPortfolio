@@ -1,6 +1,6 @@
 import { featuredPhotos } from "./featuredPhotos.js";
-import { footer } from "./footer.js";
-import { header } from "./header.js";
+import { footer } from "./components/footer.js";
+import { header } from "./components/nav.js";
 
 const featuredPhotosContainer = document.getElementById("featuredPhotosContainer");
 const headerContainer = document.querySelector("header")

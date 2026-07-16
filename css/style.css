@@ -9,7 +9,7 @@ body {
   margin: 0;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.25)),
-    url(../img/mainPageImg/mainHeader.jpg);
+    url(../img/mainPageImg/mainHeader.webp);
   background-size: cover;
   min-height: 100vh;
   background-repeat: no-repeat;
@@ -257,4 +257,19 @@ body {
 .container {
     width: min(1500px, 90%);
     margin: 0 auto;
+}
+
+#gallery-page-bg {
+  margin: 0;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.25)),
+    url(../img/galleryPhotos/galleryHeader.webp);
+  background-size: cover;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+}
+
+#galleryTitleContainer {
+  color: white;
+  margin-top: 6rem;
 }
