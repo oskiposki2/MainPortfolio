@@ -273,3 +273,70 @@ body {
   color: white;
   margin-top: 6rem;
 }
+
+#gallery {
+  columns: 3;
+  column-gap: 1.5rem;
+  padding: 4rem 0;
+}
+
+.photo-card {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.photo-card img {
+    width: 100%;
+    height: auto;
+    transition:
+    transform .35s ease,
+    filter .35s ease;
+}
+
+.photo-card:hover img {
+    transform: scale(1.03);
+    filter: brightness(.8);
+}
+
+.photo-card:hover {
+    opacity: 1;
+}
+
+#lightbox {
+    position: fixed;
+    inset: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,.9);
+    z-index: 1000;
+}
+
+#lightbox.open {
+  display: flex;
+}
+
+#lightbox img {
+  max-width: 90vw;
+  max-height: 85vh;
+}
+
+#close {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#close:hover {
+    transform: scale(1.15);
+    opacity: .8;
+}
