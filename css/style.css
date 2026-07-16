@@ -181,6 +181,7 @@ body {
   overflow: hidden;
   position: relative;
   flex: 1;
+  cursor: pointer;
 }
 
 .featuredPhoto img {
@@ -309,20 +310,37 @@ body {
 #lightbox {
     position: fixed;
     inset: 0;
-    display: none;
+
+    display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0,0,0,.9);
-    z-index: 1000;
+
+    background: rgba(0,0,0,.85);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity .3s ease,
+        visibility .3s ease;
 }
 
 #lightbox.open {
-  display: flex;
+    opacity: 1;
+    visibility: visible;
 }
 
 #lightbox img {
-  max-width: 90vw;
-  max-height: 85vh;
+    max-width: 90vw;
+    max-height: 90vh;
+
+    transform: scale(.95);
+
+    transition: transform .35s ease;
+}
+
+#lightbox.open img {
+    transform: scale(1);
 }
 
 #close {
