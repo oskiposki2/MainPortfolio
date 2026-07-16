@@ -358,3 +358,33 @@ body {
     transform: scale(1.15);
     opacity: .8;
 }
+
+#previous,
+#next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: rgb(141, 141, 141);
+    font-size: 2rem;
+
+    cursor: pointer;
+}
+
+#previous {
+    left: 2rem;
+}
+
+#next {
+    right: 2rem;
+}
+
+#previous:hover,
+#next:hover {
+  color: white;
+}
