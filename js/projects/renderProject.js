@@ -1,31 +1,28 @@
 import { projects } from "./projects.js";
 
 export function renderProject() {
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("id");
 
-    const params = new URLSearchParams(window.location.search);
-    const id = params.get("id");
+  const project = projects.find((project) => project.id === id);
 
-    const project = projects.find(project => project.id === id);
-
-    if (!project) {
-
-        document.querySelector("main").innerHTML = `
+  if (!project) {
+    document.querySelector("main").innerHTML = `
             <h1>Projektet kunde inte hittas.</h1>
         `;
 
-        return;
-    }
+    return;
+  }
 
-    renderHero(project);
-    renderContent(project);
-
+  renderHero(project);
+  console.log(project);
+  renderContent(project);
 }
 
 function renderHero(project) {
+  const hero = document.querySelector("#project-hero");
 
-    const hero = document.querySelector("#project-hero");
-
-    hero.innerHTML = `
+  hero.innerHTML = `
         <img
             src="img/projects/${project.hero}"
             alt="${project.title}">
@@ -40,66 +37,95 @@ function renderHero(project) {
 
         </div>
     `;
-
 }
 
 function renderContent(project) {
+  const container = document.querySelector("#project-content");
 
-    const container = document.querySelector("#project-content");
+  container.innerHTML = `
 
-    container.innerHTML = `
+    <section class="project-section">
 
-        <section class="project-section">
+        <h2>Om projektet</h2>
 
-            <h2>Om projektet</h2>
+        <p>${project.about}</p>
 
-            <p>${project.about}</p>
+    </section>
 
-        </section>
+    <section class="project-info">
 
-        <section class="project-section">
+        <div class="info-item">
+            <span>Typ</span>
+            <strong>${project.type}</strong>
+        </div>
 
-            <h2>Tekniker</h2>
+        <div class="info-item">
+            <span>År</span>
+            <strong>${project.year}</strong>
+        </div>
 
-            <div class="tech-list">
+        <div class="info-item">
+            <span>Responsivitet</span>
+            <strong>${project.responsive}</strong>
+        </div>
 
-                ${project.technologies
-                    .map(tech => `<span>${tech}</span>`)
-                    .join("")}
+    </section>
 
-            </div>
+    <section class="project-section">
 
-        </section>
+        <h2>Funktioner</h2>
 
-        <section class="project-section">
+        <ul class="feature-list">
 
-            <h2>Utmaningar</h2>
+            ${project.features
+                .map(feature => `<li>${feature}</li>`)
+                .join("")}
 
-            <p>${project.challenge}</p>
+        </ul>
 
-        </section>
+    </section>
 
-        <section class="project-section">
+    <section class="project-section">
 
-            <h2>Vad jag lärde mig</h2>
+        <h2>Tekniker</h2>
 
-            <p>${project.learned}</p>
+        <div class="tech-list">
 
-        </section>
+            ${project.technologies
+                .map(tech => `<span>${tech}</span>`)
+                .join("")}
 
-    `;
+        </div>
 
-    renderLinks(project, container);
+    </section>
 
+    <section class="project-section">
+
+        <h2>Utmaningar</h2>
+
+        <p>${project.challenge}</p>
+
+    </section>
+
+    <section class="project-section">
+
+        <h2>Vad jag lärde mig</h2>
+
+        <p>${project.learned}</p>
+
+    </section>
+
+`;
+
+  renderLinks(project, container);
 }
 
 function renderLinks(project, container) {
+  const links = document.createElement("section");
 
-    const links = document.createElement("section");
+  links.className = "project-links";
 
-    links.className = "project-links";
-
-    links.innerHTML = `
+  links.innerHTML = `
         <h2>Länkar</h2>
 
         <div class="project-buttons">
@@ -114,8 +140,8 @@ function renderLinks(project, container) {
             </a>
 
             ${
-                project.demo
-                    ? `
+              project.demo
+                ? `
                     <a
                         href="${project.demo}"
                         target="_blank"
@@ -125,12 +151,11 @@ function renderLinks(project, container) {
 
                     </a>
                     `
-                    : ""
+                : ""
             }
 
         </div>
     `;
 
-    container.append(links);
-
+  container.append(links);
 }
