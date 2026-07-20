@@ -1,8 +1,8 @@
 import { featuredPhotos } from "./featuredPhotos.js";
-import { footer } from "./components/footer.js";
-import { header } from "./components/nav.js";
-import { openLightbox, closeLightbox } from "./gallery/lightbox.js";
-import { photos } from "./gallery/photos.js";
+import { footer } from "../components/footer.js";
+import { header } from "../components/nav.js";
+import { openLightbox, closeLightbox } from "../gallery/lightbox.js";
+import { photos } from "../gallery/photos.js";
 
 const featuredPhotosContainer = document.getElementById(
   "featuredPhotosContainer",
