@@ -1,9 +1,9 @@
 import { header } from "../components/nav.js";
-import { renderProjects } from "./renderProjects.js";
 import { footer } from "../components/footer.js";
+import { renderProject } from "./renderProject.js";
 
-const nav = document.getElementById("projects-page-bg");
+const hero = document.getElementById("project-hero");
 
-header(nav);
-footer()
-renderProjects()
+header(hero);
+footer();
+renderProject();
