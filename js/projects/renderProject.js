@@ -27,6 +27,10 @@ function renderHero(project) {
             src="img/projects/${project.hero}"
             alt="${project.title}">
 
+                <a href="projects.html" class="back-link">
+        ← Tillbaka till projekt
+    </a>
+
         <div class="hero-content">
 
             <span>${project.type}</span>
@@ -77,9 +81,7 @@ function renderContent(project) {
 
         <ul class="feature-list">
 
-            ${project.features
-                .map(feature => `<li>${feature}</li>`)
-                .join("")}
+            ${project.features.map((feature) => `<li>${feature}</li>`).join("")}
 
         </ul>
 
@@ -92,8 +94,8 @@ function renderContent(project) {
         <div class="tech-list">
 
             ${project.technologies
-                .map(tech => `<span>${tech}</span>`)
-                .join("")}
+              .map((tech) => `<span>${tech}</span>`)
+              .join("")}
 
         </div>
 

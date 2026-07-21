@@ -693,3 +693,62 @@ body {
 
     font-size: 1.1rem;
 }
+
+.back-link {
+    position: absolute;
+
+    top: 7rem;      /* Justera efter din navbar */
+    left: 2rem;
+
+    z-index: 20;
+
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+
+    padding: .5rem 1rem;
+
+    background: rgba(0,0,0,.35);
+    backdrop-filter: blur(8px);
+
+    border-radius: 999px;
+}
+
+.back-link:hover {
+    background: rgba(0,0,0,.55);
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#about-page-bg {
+  margin: 0;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url(../img/about/DSCF5302_resultat.webp);
+  background-size: cover;
+  min-height: 80vh;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.hero-text {
+    position: absolute;
+    color: white;
+    left: 5%;
+    bottom: 15rem;
+
+    max-width: 450px;
+
+    padding: 2rem;
+
+    background: rgba(0,0,0,.3);
+    backdrop-filter: blur(10px);
+
+    border-radius: 1rem;
+}

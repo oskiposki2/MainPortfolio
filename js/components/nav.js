@@ -9,7 +9,7 @@ export function header(container) {
         { text: "HEM", href: "index.html" },
         { text: "FOTO", href: "gallery.html" },
         { text: "PROJEKT", href: "projects.html"},
-        { text: "OM MIG", href: "#personalInfo" },
+        { text: "OM MIG", href: "about.html" },
         { text: "KONTAKT", href: "#footer" }
     ];
 

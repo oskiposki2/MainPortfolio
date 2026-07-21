@@ -2,8 +2,8 @@ import { header } from "../components/nav.js";
 import { footer } from "../components/footer.js";
 import { renderProject } from "./renderProject.js";
 
-const hero = document.getElementById("project-hero");
+const headerContainer = document.getElementById("header");
 
-header(hero);
+header(headerContainer);
 footer();
 renderProject();
