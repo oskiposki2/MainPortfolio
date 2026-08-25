@@ -10,7 +10,7 @@ export function header(container) {
         { text: "FOTO", href: "gallery.html" },
         { text: "PROJEKT", href: "projects.html"},
         { text: "OM MIG", href: "about.html" },
-        { text: "KONTAKT", href: "#footer" }
+        { text: "KONTAKT", href: "about.html#contact" }
     ];
 
     for (const link of links) {

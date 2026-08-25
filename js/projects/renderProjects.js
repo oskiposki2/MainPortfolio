@@ -20,7 +20,6 @@ export function renderProjects() {
 
                     <div class="project-header">
                         <h2>${project.title}</h2>
-                        <span>${project.year}</span>
                     </div>
 
                     <p>${project.description}</p>
