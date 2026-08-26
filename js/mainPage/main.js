@@ -3,6 +3,7 @@ import { footer } from "../components/footer.js";
 import { header } from "../components/nav.js";
 import { openLightbox, closeLightbox } from "../gallery/lightbox.js";
 import { photos } from "../gallery/photos.js";
+import { changeHero } from "../components/hero.js";
 
 const featuredPhotosContainer = document.getElementById(
   "featuredPhotosContainer",
@@ -37,6 +38,8 @@ function loadFeaturedPhotos() {
 
 footer();
 header(headerContainer);
+
+setInterval(changeHero, 6000);
 
 loadFeaturedPhotos();
 closeLightbox();
