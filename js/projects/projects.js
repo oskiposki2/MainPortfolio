@@ -33,7 +33,6 @@ export const projects = [
       "Projektet gav mig större förståelse för modulär JavaScript, DOM-manipulation och hur man organiserar ett större frontendprojekt. Även hur man snabbt och smidigt konverterar en större mängd bilder på samma gång och användandet av filformatet WebP för bilder.",
 
     github: "https://github.com/oskiposki2/MainPortfolio",
-    demo: "https://DIN-PORTFOLIO.se",
   },
 
   {
@@ -72,7 +71,7 @@ export const projects = [
 
     github: "https://github.com/LordStickyNote/Projektkurs-inhemsk-turism",
 
-    demo: "https://lordstickynote.github.io/Projektkurs-inhemsk-turism/index.html",
+    demo: "https://aquamarine-khapse-de2135.netlify.app/",
   },
 
   {
