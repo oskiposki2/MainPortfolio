@@ -75,3 +75,11 @@ portfolio/
     ├── mainPageImg/
     ├── projects/
     └── projectsPreview/
+
+
+## Licens
+
+Detta projekt är ett personligt portfolio-projekt.
+
+Kod och originalinnehåll i projektet tillhör Oskar Berntson.
+Fotografier får inte användas, kopieras eller distribueras utan tillstånd.
