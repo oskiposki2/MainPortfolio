@@ -6,24 +6,24 @@ Webbplatsen är byggd från grunden med HTML, CSS och JavaScript och fungerar so
 
 ---
 
-## ✨ Om webbplatsen
+## Om webbplatsen
 
 Portfolion är skapad för att ge en bild av vem jag är som webbutvecklarstudent och naturfotograf, samtidigt som den fungerar som en samlingsplats för mina projekt.
 
 Webbplatsen innehåller bland annat:
 
-- 🏠 Startsida med presentation och utvalda projekt
-- 💻 Projektsida med mina webbutvecklingsprojekt
-- 📷 Fotogalleri med naturfotografi
-- 👤 Om mig-sida
-- ✉️ Kontaktuppgifter och sociala länkar
-- 📱 Responsiv design för mobil, surfplatta och desktop
-- 🖼️ Interaktivt bildgalleri med lightbox
-- 🧭 Dynamisk navigation och återanvändbara JavaScript-komponenter
+- Startsida med presentation och utvalda projekt
+- Projektsida med mina webbutvecklingsprojekt
+- Fotogalleri med naturfotografi
+- Om mig-sida
+- Kontaktuppgifter och sociala länkar
+- Responsiv design för mobil, surfplatta och desktop
+- Interaktivt bildgalleri med lightbox
+- Dynamisk navigation och återanvändbara JavaScript-komponenter
 
 ---
 
-## 🛠️ Teknik
+## Teknik
 
 Projektet är byggt med:
 
@@ -43,7 +43,7 @@ för vissa av mina projekt.
 
 ---
 
-## 📁 Projektstruktur
+## Projektstruktur
 
 Projektet är uppdelat i separata HTML-, CSS- och JavaScript-filer.
 
