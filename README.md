@@ -8,7 +8,7 @@ Webbplatsen är byggd från grunden med HTML, CSS och JavaScript och fungerar so
 
 ## Om webbplatsen
 
-Portfolion är skapad för att ge en bild av vem jag är som webbutvecklarstudent och naturfotograf, samtidigt som den fungerar som en samlingsplats för mina projekt.
+Portfolion är skapad för att ge en bild av vem jag är som webbutvecklarstudent och fotograf, samtidigt som den fungerar som en samlingsplats för mina projekt.
 
 Webbplatsen innehåller bland annat:
 
@@ -37,7 +37,6 @@ Jag använder även:
 - **Leaflet** i Turistguide-projektet
 - **Photoshop**
 - **Illustrator**
-- **Audacity**
 
 för vissa av mina projekt.
 
@@ -53,20 +52,26 @@ portfolio/
 ├── index.html
 ├── about.html
 ├── projects.html
+├── project.html
 ├── gallery.html
 │
 ├── css/
 │   └── style.css
 │
 ├── js/
-│   ├── mainPage/
 │   ├── about/
-│   ├── projects/
+│   ├── components/
 │   ├── gallery/
-│   └── components/
+│   ├── mainPage/
+│   └── projects/
 │
 └── img/
     ├── about/
-    ├── gallery/
+    ├── favicon/
+    ├── galleryFull/
+    ├── galleryPreview/
     ├── heros/
-    └── projects/
+    ├── logo/
+    ├── mainPageImg/
+    ├── projects/
+    └── projectsPreview/
