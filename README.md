@@ -75,7 +75,7 @@ portfolio/
     ├── mainPageImg/
     ├── projects/
     └── projectsPreview/
-
+```
 
 ## Licens
 
