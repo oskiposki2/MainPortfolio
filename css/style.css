@@ -10,7 +10,7 @@ body {
     position: relative;
     overflow: hidden;
 
-    min-height: 100vh;
+    min-height: 100dvh;
 }
 
 .hero-bg-layer {
@@ -306,6 +306,10 @@ body {
   display: flex;
   gap: 2rem;
   margin: 1.5rem 0;
+}
+
+.footer-logo svg {
+    width: 250px;
 }
 
 .section-title {
@@ -1077,7 +1081,7 @@ body {
   /* ---------- START HERO ---------- */
 
   #start-page-bg {
-    min-height: 100svh;
+    min-height: 100dvh;
     background-position: center;
   }
 
@@ -1331,7 +1335,7 @@ body {
   /* ---------- START HERO ---------- */
 
   #start-page-bg {
-    min-height: 100svh;
+    min-height: 100dvh;
     background-position: center center;
   }
 
@@ -1936,5 +1940,23 @@ body {
 
   .titles h3 {
     font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 700px) {
+  #previous,
+  #next {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    z-index: 10;
+  }
+
+  #previous {
+    left: 0.5rem;
+  }
+
+  #next {
+    right: 0.5rem;
   }
 }

@@ -78,7 +78,7 @@ export const projects = [
     id: "timeline",
     title: "Interaktiv tidslinje",
     year: "2025",
-    type: "Personligt projekt",
+    type: "Kursprojekt",
 
     image: "tidslinje.webp",
     hero: "tidslinje.webp",
