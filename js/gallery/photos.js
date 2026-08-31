@@ -162,12 +162,6 @@ export const photos = [
     category: "nature",
   },
   {
-    id: 47,
-    filename: "jumpdisa.webp",
-    alt: "Rottweiler hoppar över hinder",
-    category: "dog",
-  },
-  {
     id: 25,
     filename: "girl.webp",
     alt: "Ung kvinna",
